@@ -14,7 +14,7 @@
     --font-family-h1: 'combine';
     --font-tt:#E6E6E6;
     --text-color: #E6E6E6;
-    --h-color:yellow;
+    --h-color:white;
     --hover-color: #cc9191;
     --sombra: #8b8eaf;
     --primary-color: #4756df;
@@ -102,6 +102,7 @@ body {
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--sombra);
     margin: 2rem auto;
+    background-color: #8b8eaf;
 
 }
 
@@ -135,6 +136,11 @@ body {
     box-shadow: 0 3px 10px var(--sombra);
     padding: 20px;
     margin: 10px;
+    transition: 2s;
+}
+
+.skill__item:hover{
+    background-color: #fff;
 }
 
 .proyectos{
@@ -180,6 +186,7 @@ body {
     width: 10rem;
 }
 
+
 .Formacion__list { 
     display: flex;
     flex-wrap: wrap;
@@ -200,6 +207,7 @@ body {
     padding: 20px;
     margin: 10px;
 }
+
 
 .contacto__formulario{
     max-width: 40.75rem;
@@ -254,6 +262,7 @@ body {
 }
 
 footer {
+    width: 100vw;
     background-color: white;
     color: black;
     display: block;
@@ -274,6 +283,7 @@ footer {
     width: auto;
     height: auto;
     border-radius: 100%;
+    border:1px solid black;
     box-shadow: 0 3px 10px var(--sombra);
     padding: 20px;
     margin: 10px;
@@ -285,23 +295,6 @@ footer {
     background-color: white;
 }
 
-.red {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    width: 15px;
-    height: auto;
-    border-radius: 100%;
-    box-shadow: 0 3px 10px var(--sombra);
-    padding: 20px;
-    margin: 10px;
-    transition: .6s;
-
-}
-
-.red:hover{
-    background-color: white;
-}
 
 @media (max-width: 720px) {
 
@@ -313,15 +306,24 @@ footer {
     }
 
     .header__nav-list{
-        width: 100%;
-        gap: 0.5rem;
-        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
 
     }
-    nav ul li{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+
+    .about-me{
+        text-align: center;
+    }
+
+    .about-me__content{
+        width: 25rem;
+        padding: 0.5rem;
+        border-radius: 6px;
+        box-shadow: 0px 2px 15px 2px var(--sombra);
+        margin: 2rem 2rem;
+    
     }
     .proyecto img {
         width: 100%;
@@ -331,4 +333,8 @@ footer {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
+    .contacto__formulario{
+        margin: 2rem 2rem;
+
+    }
 }
